@@ -1,4 +1,4 @@
-# starsExtra 0.0.3
+# starsExtra 0.0.3 (2020-04-22)
 
 * Initial version
 * Added 'focal2r' and 'focal2' functions
@@ -11,9 +11,16 @@
 * Added 'aspect' function
 * Added vignette with illustrations
 
+# starsExtra 0.1.0
+
+* Added 'trim' function
+* Switched from 'testthat' to 'tinytest'
+* Replaced 'if' with 'switch' in C code
+* Added 'slope' function
+
 # To do
 
-* Add flow accumulation function
-* Add pit fill function
-* Add river network function
-* Add slope function
+* Parallel processing in 'CI' function
+* Add 'extract' function (?exactextractr)
+* Adapt 'trim' to multi-band rasters
+* 3-band raster to 1-band RGB hex

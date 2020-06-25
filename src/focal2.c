@@ -54,19 +54,30 @@ void focal2_c(
                     ksize_valid++;
                     
                     // Calculate *weighted* current value
-                    if(*weight_fun == 1) { current = current + weights[q]; }
-                    if(*weight_fun == 2) { current = current - weights[q]; }
-                    if(*weight_fun == 3) { current = current * weights[q]; }
-                    if(*weight_fun == 4) { current = current / weights[q]; }
+                    switch(*weight_fun) {
+                        case 1: current = current + weights[q]; break;
+                        case 2: current = current - weights[q]; break;
+                        case 3: current = current * weights[q]; break;
+                        case 4: current = current / weights[q]; break;
+                    }
 
-                    // Update mean / sum
-                    if(*fun == 1 || *fun == 2) { dat = dat + current; }
-                    
-                    // Update minimum / maximum
-                    if(*fun == 3 && min_value == *na_flag) { min_value = current; }
-                    if(*fun == 3 && min_value != *na_flag && current < min_value) { min_value = current; }
-                    if(*fun == 4 && max_value == *na_flag) { max_value = current; }
-                    if(*fun == 4 && max_value != *na_flag && current > max_value) { max_value = current; }
+                    // Update mean / sum / minimum / maximum
+                    switch(*fun) {
+                        case 1: 
+                            dat = dat + current; 
+                            break;
+                        case 2: 
+                            dat = dat + current; 
+                            break;
+                        case 3: 
+                            if(min_value == *na_flag) { min_value = current; }
+                            if(min_value != *na_flag && current < min_value) { min_value = current; }
+                            break;
+                        case 4: 
+                            if(max_value == *na_flag) { max_value = current; }
+                            if(max_value != *na_flag && current > max_value) { max_value = current; }
+                            break;
+                    }
                     
                 }
             
@@ -74,10 +85,12 @@ void focal2_c(
 
             // If any non-'NA' value, calculate mean / sum / min / max
             if(ksize_valid > 0) {
-                if(*fun == 1) { output[index] = dat / ksize_valid; }
-                if(*fun == 2) { output[index] = dat; }
-                if(*fun == 3) { output[index] = min_value; }
-                if(*fun == 4) { output[index] = max_value; }
+                switch(*fun) {
+                    case 1: output[index] = dat / ksize_valid; break;
+                    case 2: output[index] = dat;               break;
+                    case 3: output[index] = min_value;         break;
+                    case 4: output[index] = max_value;         break;
+                }
             }
 
             // Entire neighborhood is 'NA' -> set 'NA'

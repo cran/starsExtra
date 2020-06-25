@@ -4,13 +4,15 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
+## ----installation1, eval=FALSE------------------------------------------------
+#  install.packages("starsExtra")
+
 ## ----installation2, eval=FALSE------------------------------------------------
 #  install.packages("remotes")
 #  remotes::install_github("michaeldorman/starsExtra")
 
 ## -----------------------------------------------------------------------------
 library(starsExtra)
-library(units)
 
 ## -----------------------------------------------------------------------------
 data(dem)
@@ -39,11 +41,19 @@ plot(carmel_mean27, main = "mean (k=27)", breaks = "equal", col = terrain.colors
 
 ## -----------------------------------------------------------------------------
 data(carmel)
-carmel_asp = aspect(carmel)
+carmel_slope = slope(carmel)
 
 ## ---- fig.width=4, fig.height=6, out.width="45%", fig.show="hold"-------------
 plot(carmel, breaks = "equal", col = terrain.colors(11))
-plot(carmel_asp, breaks = "equal", col = hcl.colors(11, "Spectral"))
+plot(carmel_slope, breaks = "equal", col = hcl.colors(11, "Spectral"))
+
+## -----------------------------------------------------------------------------
+data(carmel)
+carmel_aspect = aspect(carmel)
+
+## ---- fig.width=4, fig.height=6, out.width="45%", fig.show="hold"-------------
+plot(carmel, breaks = "equal", col = terrain.colors(11))
+plot(carmel_aspect, breaks = "equal", col = hcl.colors(11, "Spectral"))
 
 ## -----------------------------------------------------------------------------
 data(golan)
