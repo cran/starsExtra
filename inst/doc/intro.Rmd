@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
   comment = "#>",
   dpi = 50
 )
+options(preferRaster = TRUE)
 ```
 
 ## Package `starsExtra`
@@ -128,3 +129,4 @@ plot(golan, breaks = "equal", col = terrain.colors(11))
 plot(golan_asp, breaks = "equal", col = hcl.colors(11, "Spectral"))
 plot(golan_ci, breaks = "equal", col = hcl.colors(11, "Spectral"))
 ```
+

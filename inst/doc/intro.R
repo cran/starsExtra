@@ -4,6 +4,7 @@ knitr::opts_chunk$set(
   comment = "#>",
   dpi = 50
 )
+options(preferRaster = TRUE)
 
 ## ----installation1, eval=FALSE------------------------------------------------
 #  install.packages("starsExtra")

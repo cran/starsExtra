@@ -8,16 +8,22 @@
 #' @export
 #'
 #' @examples
-#' # Small example
+#' # Single-band example
 #' data(dem)
 #' dem[[1]][1,] = NA
-#' dem1 = trim(dem)
+#' dem1 = trim2(dem)
+#' 
+#' # Multi-band example
+#' data(landsat)
+#' landsat[[1]][1:100,,] = NA
+#' landsat1 = trim2(landsat)
+#' 
 
-trim = function(x) {
+trim2 = function(x) {
 
   # Checks
   x = check_one_attribute(x)
-  x = check_2d(x)
+  x = check_2d_3d(x)
 
   # Calculate rows/columns to retain
   dim1 = apply(x[[1]], 1, function(x) !all(is.na(x)))
