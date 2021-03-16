@@ -1,6 +1,6 @@
 Package: starsExtra
 Title: Miscellaneous Functions for Working with 'stars' Rasters
-Version: 0.2.2
+Version: 0.2.4
 Authors@R: 
     person("Michael", "Dorman", email = "dorman@post.bgu.ac.il", role = c("aut", "cre"))
 Description: Miscellaneous functions for working with 'stars' objects, mainly single-band rasters. Currently includes functions for: (1) focal filtering, (2) detrending of Digital Elevation Models, (3) calculating flow length, (4) calculating the Convergence Index, (5) calculating topographic aspect and topographic slope.
@@ -16,8 +16,8 @@ URL: https://michaeldorman.github.io/starsExtra/,
         https://github.com/michaeldorman/starsExtra/
 BugReports: https://github.com/michaeldorman/starsExtra/issues/
 NeedsCompilation: yes
-Packaged: 2021-01-09 16:42:22 UTC; michael
+Packaged: 2021-03-16 08:34:44 UTC; michael
 Author: Michael Dorman [aut, cre]
 Maintainer: Michael Dorman <dorman@post.bgu.ac.il>
 Repository: CRAN
-Date/Publication: 2021-01-10 03:50:02 UTC
+Date/Publication: 2021-03-16 09:00:03 UTC
