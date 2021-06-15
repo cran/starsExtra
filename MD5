@@ -1,7 +1,7 @@
-e65f6794e055489daae06d5e09a9668b *DESCRIPTION
+563ba600bd37680422c68a59c752ce49 *DESCRIPTION
 2b68ef7d4f3f35f660f181e38e70fadb *LICENSE
 49803c62adef93a310cad995a21fd14f *NAMESPACE
-c34889912465bf8f91dff181a6cad718 *NEWS.md
+0b83e8fe3dbb61936db6710867fbf75f *NEWS.md
 cc8aef1ea60b509d52c86f70bc7a8727 *R/CI.R
 4c42787558a2448744ec86acb5e677a0 *R/aspect.R
 b16f88ff455e4e92267d65ad724824a2 *R/checks.R
@@ -18,7 +18,7 @@ c734724fd801eba85c57a44d7d17e63a *R/footprints.R
 3f740680a9bd03870d797393be536b5a *R/make_grid.R
 79169df9d486721c33b5e36165ddfeda *R/matrix_extend.R
 90fbaee6176765e7d9e7748c9036ccfc *R/matrix_get_neighbors.R
-a257c2f1af1cc406ec5e8a41da5eb539 *R/matrix_to_stars.R
+b7f12292bfe1331a9d53fe16bc9c9900 *R/matrix_to_stars.R
 029850c1bd6fd529e6cf0e30a9e9f34c *R/matrix_trim.R
 5b94953911b0e3133da18bc16dfdc9ae *R/mode.R
 fa765a4178a28bb62b41d010b39a55ca *R/rgb_to_greyscale.R
@@ -29,14 +29,14 @@ ca3f50ebc399c89a072ec423e41f1a12 *R/st_normalize_2d.R
 7fdc154f01abc6596511a681c6b59ac8 *R/trim2.R
 f6039641b4b59562ab48937f1f9d15dd *R/w_azimuth.R
 817d9b897c997121cd9f7daaf8e09a04 *R/w_circle.R
-d6a7dcdedb4c2e083c1022e631c2acb9 *build/vignette.rds
+8a2536ff0d6f184c6836212734f202c6 *build/vignette.rds
 15363a3440be490d057cad57b2e8e314 *data/carmel.rda
 a87eb789fbb61360a34ed56db9c46410 *data/dem.rda
 bcb3a2806a993769d008c4be346dc2ce *data/golan.rda
 fa949117966eabe452ab7bd0835cb721 *data/landsat.rda
 3584111b770bcd39f6ca0f10d65a24e9 *inst/doc/intro.R
 abfab666772cdfd0c7ce1a9af5c7b4e2 *inst/doc/intro.Rmd
-e3a32a8d13c9b16f388b1c6af7d37626 *inst/doc/intro.html
+98c6424c8bb6ad2c7c48193f88fc2f8f *inst/doc/intro.html
 cf7828caad6a0101c66ff7769ac1111e *inst/tinytest/test-extract2.R
 aea6c2124b9f54d04ca02069573591ee *inst/tinytest/test-focal2.R
 9a9261a4c0e4fe12ca7eaeb3fc16268c *inst/tinytest/test-focal2r.R
